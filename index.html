@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English Worksheet - Office Communication & Software Roles</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+:root{--wp:#D35400;--ws:#E67E22;--wa:#F39C12;--wl:#FDF2E9;--wc:#FEF9E7;--wb:#6E2C00;--wd:#3E2723;--wt:#A04000;--wg:#D4AC0D;--wpc:#FAD7A0;--wr:#F5B7B1;--wsd:#F6DDCC;}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:linear-gradient(135deg,var(--wc) 0%,var(--wl) 50%,var(--wsd) 100%);color:var(--wd);overflow-x:hidden}
+.navbar-custom{background:linear-gradient(135deg,var(--wp) 0%,var(--wt) 100%);box-shadow:0 4px 20px rgba(211,84,0,0.3);padding:1rem 0}
+.navbar-custom .navbar-brand{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:800;color:#fff!important;text-shadow:2px 2px 4px rgba(0,0,0,0.2)}
+.navbar-custom .nav-link{color:rgba(255,255,255,0.9)!important;font-weight:500;margin:0 0.5rem;transition:all 0.3s;border-radius:25px;padding:0.5rem 1.2rem!important}
+.navbar-custom .nav-link:hover{background:rgba(255,255,255,0.2);color:#fff!important;transform:translateY(-2px)}
+.hero-section{background:linear-gradient(135deg,var(--wp) 0%,var(--ws) 50%,var(--wa) 100%);padding:100px 0 80px;position:relative;overflow:hidden}
+.hero-section::before{content:'';position:absolute;top:-50%;right:-20%;width:600px;height:600px;background:rgba(255,255,255,0.05);border-radius:50%}
+.hero-title{font-family:'Playfair Display',serif;font-size:3.5rem;font-weight:800;color:#fff;text-shadow:3px 3px 6px rgba(0,0,0,0.2);margin-bottom:1rem}
+.hero-subtitle{font-size:1.3rem;color:rgba(255,255,255,0.95);font-weight:300;max-width:700px}
+.hero-badge{display:inline-block;background:rgba(255,255,255,0.2);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.3);color:#fff;padding:0.5rem 1.5rem;border-radius:50px;font-weight:500;margin-bottom:1.5rem}
+.section-title{font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:800;color:var(--wb);text-align:center;margin-bottom:3rem;position:relative}
+.section-title::after{content:'';display:block;width:80px;height:4px;background:linear-gradient(90deg,var(--wp),var(--wa));margin:1rem auto 0;border-radius:2px}
+.section-padding{padding:80px 0}
+.comic-section{background:linear-gradient(180deg,var(--wc) 0%,var(--wpc) 100%)}
+.comic-panel{background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 15px 40px rgba(211,84,0,0.15);transition:all 0.4s;border:3px solid var(--wsd);position:relative;margin-bottom:1.5rem}
+.comic-panel:hover{transform:translateY(-10px) rotate(1deg);box-shadow:0 25px 60px rgba(211,84,0,0.25)}
+.comic-panel::before{content:attr(data-panel);position:absolute;top:15px;left:15px;background:var(--wp);color:#fff;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.1rem;z-index:10;box-shadow:0 4px 10px rgba(0,0,0,0.2)}
+.comic-panel img{width:100%;height:220px;object-fit:cover;border-bottom:4px solid var(--wa)}
+.comic-panel-body{padding:1.5rem}
+.comic-panel-title{font-weight:700;color:var(--wb);font-size:1.1rem;margin-bottom:0.5rem}
+.comic-panel-text{color:#5D4037;font-size:0.95rem;line-height:1.6}
+.comic-speech-bubble{background:linear-gradient(135deg,var(--wl),var(--wpc));border-radius:15px;padding:1rem;margin-top:1rem;position:relative;font-style:italic;color:var(--wt);border-left:4px solid var(--wp)}
+.questions-section{background:linear-gradient(135deg,#fff 0%,var(--wl) 100%)}
+.question-card{background:#fff;border-radius:20px;padding:2rem;margin-bottom:2rem;box-shadow:0 10px 30px rgba(211,84,0,0.1);border-left:5px solid var(--wp);transition:all 0.3s}
+.question-card:hover{transform:translateX(10px);box-shadow:0 15px 40px rgba(211,84,0,0.2)}
+.question-number{display:inline-flex;align-items:center;justify-content:center;width:45px;height:45px;background:linear-gradient(135deg,var(--wp),var(--ws));color:#fff;border-radius:50%;font-weight:700;font-size:1.2rem;margin-right:1rem;box-shadow:0 4px 10px rgba(211,84,0,0.3)}
+.question-text{font-weight:600;color:var(--wb);font-size:1.15rem;margin-bottom:1rem}
+.answer-text{color:#5D4037;line-height:1.8;font-size:1rem}
+.answer-text strong{color:var(--wp)}
+.vocab-section{background:linear-gradient(180deg,var(--wpc) 0%,var(--wc) 100%)}
+.vocab-card{background:#fff;border-radius:15px;padding:1.2rem 1.5rem;margin-bottom:1rem;box-shadow:0 5px 20px rgba(211,84,0,0.08);display:flex;align-items:center;transition:all 0.3s;border:2px solid transparent}
+.vocab-card:hover{border-color:var(--wa);transform:scale(1.02);box-shadow:0 10px 30px rgba(211,84,0,0.15)}
+.vocab-icon{width:50px;height:50px;background:linear-gradient(135deg,var(--wp),var(--ws));border-radius:12px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.3rem;margin-right:1rem;flex-shrink:0}
+.vocab-english{font-weight:700;color:var(--wb);font-size:1.05rem}
+.vocab-spanish{color:#8D6E63;font-size:0.95rem}
+.vocab-badge{margin-left:auto;background:linear-gradient(135deg,var(--wa),var(--wg));color:#fff;padding:0.3rem 0.8rem;border-radius:20px;font-size:0.8rem;font-weight:600}
+.orgchart-section{background:linear-gradient(135deg,var(--wd) 0%,var(--wb) 100%);color:#fff}
+.orgchart-section .section-title{color:#fff}
+.orgchart-section .section-title::after{background:linear-gradient(90deg,var(--wa),var(--ws))}
+.tree-container{display:flex;justify-content:center;overflow-x:auto;padding:2rem 0}
+.tree{display:flex;flex-direction:column;align-items:center}
+.tree-level{display:flex;justify-content:center;gap:1rem;margin:0.5rem 0;flex-wrap:wrap}
+.tree-node{background:linear-gradient(135deg,var(--wp),var(--wt));color:#fff;padding:0.8rem 1.5rem;border-radius:12px;text-align:center;font-weight:600;cursor:pointer;transition:all 0.3s;min-width:160px;border:2px solid rgba(255,255,255,0.2);position:relative}
+.tree-node:hover{transform:scale(1.05);box-shadow:0 10px 25px rgba(0,0,0,0.3)}
+.tree-line-v{width:2px;height:25px;background:var(--wa)}
+.tree-node-csuite{background:linear-gradient(135deg,#C0392B,#E74C3C)}
+.tree-node-vp{background:linear-gradient(135deg,var(--wp),#D35400)}
+.tree-node-director{background:linear-gradient(135deg,var(--ws),#E67E22)}
+.tree-node-manager{background:linear-gradient(135deg,var(--wa),#F39C12);color:var(--wd)}
+.tree-node-lead{background:linear-gradient(135deg,var(--wg),#D4AC0D);color:var(--wd)}
+.tree-node-staff{background:linear-gradient(135deg,var(--wpc),#FAD7A0);color:var(--wd)}
+.tree-node-entry{background:linear-gradient(135deg,var(--wsd),#F6DDCC);color:var(--wd)}
+.role-en{font-size:1rem;font-weight:700}
+.role-es{font-size:0.85rem;opacity:0.9}
+.tooltip-custom{position:relative}
+.tooltip-custom .tooltip-text{visibility:hidden;background:var(--wd);color:#fff;text-align:center;padding:8px 12px;border-radius:8px;position:absolute;z-index:100;bottom:110%;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:0.85rem;opacity:0;transition:opacity 0.3s}
+.tooltip-custom:hover .tooltip-text{visibility:visible;opacity:1}
+.footer-custom{background:linear-gradient(135deg,var(--wd) 0%,var(--wb) 100%);color:rgba(255,255,255,0.8);padding:3rem 0 2rem;text-align:center}
+.footer-custom h5{color:var(--wa);font-weight:700;margin-bottom:1rem}
+.scroll-top{position:fixed;bottom:30px;right:30px;width:50px;height:50px;background:linear-gradient(135deg,var(--wp),var(--ws));color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 5px 20px rgba(211,84,0,0.4);transition:all 0.3s;z-index:1000;border:none;opacity:0;pointer-events:none}
+.scroll-top:hover{transform:translateY(-5px);box-shadow:0 10px 30px rgba(211,84,0,0.5)}
+.phrase-card{background:linear-gradient(135deg,var(--wl),#fff);border-radius:15px;padding:1.2rem;text-align:center;border:2px solid var(--wpc);transition:all 0.3s;margin-bottom:1rem}
+.phrase-card:hover{transform:translateY(-5px);border-color:var(--wp);box-shadow:0 10px 25px rgba(211,84,0,0.15)}
+.phrase-en{font-weight:700;color:var(--wp);font-size:1.1rem}
+.phrase-es{color:#8D6E63;font-size:0.9rem}
+.phrase-icon{font-size:2rem;color:var(--wa);margin-bottom:0.5rem}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+.animate-in{animation:fadeInUp 0.8s ease forwards}
+.delay-1{animation-delay:0.1s}
+.delay-2{animation-delay:0.2s}
+.delay-3{animation-delay:0.3s}
+@media(max-width:768px){.hero-title{font-size:2.2rem}.section-title{font-size:1.8rem}.comic-panel img{height:180px}.tree-node{min-width:120px;padding:0.6rem 1rem;font-size:0.85rem}}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+<div class="container">
+<a class="navbar-brand" href="#"><i class="fas fa-graduation-cap me-2"></i>English Worksheet</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon" style="filter:invert(1)"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#comic"><i class="fas fa-book-open me-1"></i>Comic</a></li>
+<li class="nav-item"><a class="nav-link" href="#questions"><i class="fas fa-question-circle me-1"></i>Questions</a></li>
+<li class="nav-item"><a class="nav-link" href="#vocabulary"><i class="fas fa-list me-1"></i>Vocabulary</a></li>
+<li class="nav-item"><a class="nav-link" href="#orgchart"><i class="fas fa-sitemap me-1"></i>Org Chart</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<section class="hero-section">
+<div class="container text-center">
+<div class="hero-badge animate-in"><i class="fas fa-language me-2"></i>Office Communication in English</div>
+<h1 class="hero-title animate-in delay-1">English Worksheet</h1>
+<p class="hero-subtitle mx-auto animate-in delay-2">A complete interactive guide for office situations, communication barriers, software company roles, and organizational hierarchy. Designed with warm colors and modern responsive design.</p>
+<div class="mt-4 animate-in delay-3">
+<a href="#comic" class="btn btn-light btn-lg rounded-pill px-4 me-2" style="color:var(--wp);font-weight:600"><i class="fas fa-arrow-down me-2"></i>Start Learning</a>
+</div>
+</div>
+</section>
+
+<section id="comic" class="comic-section section-padding">
+<div class="container">
+<h2 class="section-title"><i class="fas fa-book-open me-2" style="color:var(--wp)"></i>The Investor's Visit - Comic Story</h2>
+<p class="text-center mb-5" style="color:#8D6E63;max-width:800px;margin:0 auto">
+A story about an important English-speaking investor who arrives at the office, but the receptionist doesn't understand English. 
+Six panels showing the communication barrier and how teamwork solves it.
+</p>
+
+<div class="row justify-content-center">
+<div class="col-12 col-lg-10">
+<div class="comic-wrapper" style="background:#fff;border-radius:24px;padding:1.5rem;box-shadow:0 20px 60px rgba(211,84,0,0.2);border:4px solid var(--wsd);">
+<img src="comic.png" 
+     alt="Comic: The Investor's Visit - 6 panels showing language barrier and resolution" 
+     class="img-fluid rounded-3" 
+     style="width:100%;display:block;">
+</div>
+</div>
+</div>
+
+<div class="row mt-5 g-4">
+<div class="col-md-4">
+<div class="phrase-card h-100">
+<div class="phrase-icon"><i class="fas fa-exclamation-circle"></i></div>
+<div class="phrase-en">Panel 1-3: The Problem</div>
+<div class="phrase-es">El inversionista llega y nadie entiende ingles. La comunicacion falla completamente.</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="phrase-card h-100">
+<div class="phrase-icon"><i class="fas fa-hands-helping"></i></div>
+<div class="phrase-en">Panel 4-5: The Solution</div>
+<div class="phrase-es">El recepcionista pide ayuda a su companera que habla ingles. Usan frases simples y claras.</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="phrase-card h-100">
+<div class="phrase-icon"><i class="fas fa-smile-beam"></i></div>
+<div class="phrase-en">Panel 6: The Success</div>
+<div class="phrase-es">El inversionista queda satisfecho. La buena comunicacion crea confianza y nuevas oportunidades.</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="questions" class="questions-section section-padding">
+<div class="container">
+<h2 class="section-title"><i class="fas fa-question-circle me-2" style="color:var(--wp)"></i>Reflection Questions</h2>
+<p class="text-center mb-5" style="color:#8D6E63">Answer the following questions in English based on the comic story above.</p>
+
+<div class="question-card">
+<div class="d-flex align-items-center mb-3">
+<span class="question-number">1</span>
+<span class="question-text">What communication problems are evident in the situation?</span>
+</div>
+<div class="answer-text">
+<p><strong>The main communication problems identified are:</strong></p>
+<ul>
+<li><strong>Language Barrier:</strong> The investor speaks only English while the office staff primarily speaks Spanish. This creates a complete breakdown in verbal communication.</li>
+<li><strong>Lack of Preparedness:</strong> The company knew an international investor was coming but did not arrange for an English-speaking representative or translator in advance.</li>
+<li><strong>Non-verbal Misunderstanding:</strong> Carlos tried to use hand gestures and broken English, which led to confusion rather than clarity.</li>
+<li><strong>Professional Image Damage:</strong> The inability to communicate made the company appear unprofessional and unprepared for international business dealings.</li>
+<li><strong>Time Pressure:</strong> The investor had limited time, and the communication delay nearly cost the company a significant investment opportunity.</li>
+</ul>
+</div>
+</div>
+
+<div class="question-card">
+<div class="d-flex align-items-center mb-3">
+<span class="question-number">2</span>
+<span class="question-text">How does this affect the company's image?</span>
+</div>
+<div class="answer-text">
+<p><strong>The impact on the company's image is significant:</strong></p>
+<ul>
+<li><strong>Unprofessional Perception:</strong> The investor perceived the company as disorganized and unprofessional, which is a major red flag for potential investors.</li>
+<li><strong>Lack of Global Readiness:</strong> In today's globalized business world, not having basic English communication capabilities signals that the company is not ready for international markets.</li>
+<li><strong>Loss of Trust:</strong> The investor questioned whether he could trust this company with his money if they cannot even handle a simple meeting.</li>
+<li><strong>Competitive Disadvantage:</strong> Other companies that are bilingual or have translation resources would appear much more attractive to international investors.</li>
+<li><strong>Reputation Risk:</strong> Word spreads quickly in business circles. The investor might share this negative experience with other potential partners.</li>
+</ul>
+</div>
+</div>
+
+<div class="question-card">
+<div class="d-flex align-items-center mb-3">
+<span class="question-number">3</span>
+<span class="question-text">What simple English phrases could have solved the problem immediately?</span>
+</div>
+<div class="answer-text">
+<p><strong>These simple phrases could have prevented the crisis:</strong></p>
+<div class="row g-3 mt-2">
+<div class="col-md-4 col-sm-6"><div class="phrase-card"><div class="phrase-icon"><i class="fas fa-hand-paper"></i></div><div class="phrase-en">"Please wait a moment"</div><div class="phrase-es">Por favor espere un momento</div></div></div>
+<div class="col-md-4 col-sm-6"><div class="phrase-card"><div class="phrase-icon"><i class="fas fa-user-tie"></i></div><div class="phrase-en">"I will get someone who speaks English"</div><div class="phrase-es">Traere alguien que hable ingles</div></div></div>
+<div class="col-md-4 col-sm-6"><div class="phrase-card"><div class="phrase-icon"><i class="fas fa-coffee"></i></div><div class="phrase-en">"Would you like some coffee?"</div><div class="phrase-es">Le gustaria un cafe?</div></div></div>
+<div class="col-md-4 col-sm-6"><div class="phrase-card"><div class="phrase-icon"><i class="fas fa-clock"></i></div><div class="phrase-en">"The manager will be here soon"</div><div class="phrase-es">El gerente estara aqui pronto</div></div></div>
+<div class="col-md-4 col-sm-6"><div class="phrase-card"><div class="phrase-icon"><i class="fas fa-mobile-alt"></i></div><div class="phrase-en">"Let me use a translator"</div><div class="phrase-es">Permitame usar un traductor</div></div></div>
+<div class="col-md-4 col-sm-6"><div class="phrase-card"><div class="phrase-icon"><i class="fas fa-smile"></i></div><div class="phrase-en">"Welcome to our company!"</div><div class="phrase-es">Bienvenido a nuestra empresa!</div></div></div>
+</div>
+</div>
+</div>
+
+<div class="question-card">
+<div class="d-flex align-items-center mb-3">
+<span class="question-number">4</span>
+<span class="question-text">Have you ever experienced a similar situation? Share your experiences.</span>
+</div>
+<div class="answer-text">
+<p><strong>Sample reflection for students:</strong></p>
+<div class="p-3 rounded" style="background:var(--wl);border-left:4px solid var(--wa)">
+<p><em>"Yes, I have experienced a similar situation. Last year, I was working at a customer service desk when a tourist from France came in asking for directions. I only knew a few words in French, so I felt very embarrassed and frustrated. I tried to use Google Translate on my phone, but the connection was poor. Eventually, I drew a simple map on paper, which helped a little. This experience taught me that learning basic phrases in other languages is extremely valuable, and that technology can be a great help but should not be the only resource we rely on. Since then, I have been practicing English every day."</em></p>
+</div>
+<p class="mt-3"><strong>Key lessons from such experiences:</strong></p>
+<ul>
+<li>Always be prepared with basic phrases in common business languages.</li>
+<li>Technology (translation apps) can be a lifesaver in emergency situations.</li>
+<li>Body language and visual aids can bridge gaps when words fail.</li>
+<li>Staying calm and showing willingness to help goes a long way.</li>
+<li>Continuous language learning is an investment in your professional future.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="vocabulary" class="vocab-section section-padding">
+<div class="container">
+<h2 class="section-title"><i class="fas fa-list me-2" style="color:var(--wp)"></i>Software Company Job Titles</h2>
+<p class="text-center mb-5" style="color:#8D6E63">20+ essential roles in a software development company, with English and Spanish translations.</p>
+<div class="row">
+<div class="col-lg-6">
+<div class="vocab-card"><div class="vocab-icon"><i class="fas fa-crown"></i></div><div><div class="vocab-english">Chief Executive Officer (CEO)</div><div class="vocab-spanish">Director Ejecutivo / Presidente</div></div><span class="vocab-badge">C-Suite</span></div>
+<div class="vocab-card"><div class="vocab-icon"><i class="fas fa-microchip"></i></div><div><div class="vocab-english">Chief Technology Officer (CTO)</div><div class="vocab-spanish">Director de Tecnologia</div></div><span class="vocab-badge">C-Suite</span></div>
+<div class="vocab-card"><div class="vocab-icon"><i class="fas fa-chart-line"></i></div><div><div class="vocab-english">Chief Financial Officer (CFO)</div><div class="vocab-spanish">Director Financiero</div></div><span class="vocab-badge">C-Suite</span></div>
+<div class="vocab-card"><div class="vocab-icon"><i class="fas fa-bullhorn"></i></div><div><div class="vocab-english">Chief Marketing Officer (CMO)</div><div class="vocab-spanish">Director de Marketing</div></div><span class="vocab-badge">C-Suite</span></div>
+<div class="vocab-card"><div class="vocab-icon"><i class="fas fa-user-shield"></i></div><div><div class="vocab-english">Chief Information Security Officer (CISO)</div><div class="vocab-spanish">Director de Seguridad de la Informacion</div></div><span class="vocab-badge">C-Suite</span></div>
+<div class="vocab-card"><div class="vocab-icon"><i class="fas fa-user-tie"></i></div><div><div class="vocab-english">Vice President of Engineering</div><div class="vocab-spanish">Vicepresidente de Ingenieria</div></div><span class="vocab-badge">VP</span></div>
+<div class="vocab-card"><div class="vocab-icon"><i class="fas fa-users-cog"></i></div><div><div class="vocab-english">VP of Product Management</div><div class="vocab-spanish">Vicepresidente de Gestion de Producto</div></div><span class="vocab-badge">VP</span></div>
+<div class="vocab-card"><div class="vocab-icon"><i class="fas fa-sitemap"></i></div><div><div class="vocab-english">Director of Engineering</div><div class="vocab-spanish">Director de Ingenieria</div></div><span class="vocab-badge">Director</span></div>
+<div class="vocab-card"><div class="vocab-icon"><i class="fas fa-project-diagram"></i></div><div><div class="vocab-english">Engineering Manager</div><div class="vocab-spanish">Gerente de Ingenieria</div></div><span class="vocab-badge">Manager</span></div>
+<div class="vocab-card"><div class="vocab-icon"><i class="fas fa-tasks"></i></div><div><div class="vocab-english">Product Manager</div><div class="vocab-spanish">Gerente de Producto</div></div><span class="vocab-badge">Manager</span></div>
+<div class="vocab-card"><div class="vocab-icon"><i class="fas fa-pencil-ruler"></i></div><div><div class="vocab-english">UX/UI Designer</div><div class="vocab-spanish">Disenador UX/UI</div></div><span class="vocab-badge">Design</span></div>
+</div>
+<div class="col-lg-6">
+<div class="vocab-card"><div class="vocab-icon"><i class="fas fa-code"></i></div><div><div class="vocab-english">Software Architect</div><div class="vocab-spanish">Arquitecto de Software</div></div><span class="vocab-badge">Senior</span></div>
+<div class="vocab-card"><div class="vocab-icon"><i class="fas fa-laptop-code"></i></div><div><div class="vocab-english">Technical Lead / Team Lead</div><div class="vocab-spanish">Lider Tecnico / Lider de Equipo</div></div><span class="vocab-badge">Lead</span></div>
+<div class="vocab-card"><div class="vocab-icon"><i class="fas fa-star"></i></div><div><div class="vocab-english">Senior Software Engineer</div><div class="vocab-spanish">Ingeniero de Software Senior</div></div><span class="vocab-badge">Senior</span></div>
+<div class="vocab-card"><div class="vocab-icon"><i class="fas fa-code-branch"></i></div><div><div class="vocab-english">Software Engineer / Developer</div><div class="vocab-spanish">Ingeniero de Software / Desarrollador</div></div><span class="vocab-badge">Mid</span></div>
+<div class="vocab-card"><div class="vocab-icon"><i class="fas fa-bug"></i></div><div><div class="vocab-english">QA Engineer / Tester</div><div class="vocab-spanish">Ingeniero de Calidad / Probador</div></div><span class="vocab-badge">QA</span></div>
+<div class="vocab-card"><div class="vocab-icon"><i class="fas fa-server"></i></div><div><div class="vocab-english">DevOps Engineer</div><div class="vocab-spanish">Ingeniero DevOps</div></div><span class="vocab-badge">Ops</span></div>
+<div class="vocab-card"><div class="vocab-icon"><i class="fas fa-database"></i></div><div><div class="vocab-english">Database Administrator (DBA)</div><div class="vocab-spanish">Administrador de Base de Datos</div></div><span class="vocab-badge">Data</span></div>
+<div class="vocab-card"><div class="vocab-icon"><i class="fas fa-brain"></i></div><div><div class="vocab-english">Data Scientist</div><div class="vocab-spanish">Cientifico de Datos</div></div><span class="vocab-badge">Data</span></div>
+<div class="vocab-card"><div class="vocab-icon"><i class="fas fa-shield-alt"></i></div><div><div class="vocab-english">Cybersecurity Analyst</div><div class="vocab-spanish">Analista de Ciberseguridad</div></div><span class="vocab-badge">Security</span></div>
+<div class="vocab-card"><div class="vocab-icon"><i class="fas fa-headset"></i></div><div><div class="vocab-english">IT Support Specialist</div><div class="vocab-spanish">Especialista de Soporte TI</div></div><span class="vocab-badge">Support</span></div>
+<div class="vocab-card"><div class="vocab-icon"><i class="fas fa-seedling"></i></div><div><div class="vocab-english">Junior Developer / Intern</div><div class="vocab-spanish">Desarrollador Junior / Pasante</div></div><span class="vocab-badge">Entry</span></div>
+</div>
+</div>
+</div>
+</section>
+<section id="orgchart" class="orgchart-section section-padding">
+<div class="container">
+<h2 class="section-title"><i class="fas fa-sitemap me-2" style="color:var(--wa)"></i>Organizational Chart</h2>
+<p class="text-center mb-5" style="color:rgba(255,255,255,0.8)">Hierarchical structure of a software development company, from highest to lowest authority. Hover over any role to see details!</p>
+
+<div class="tree-container">
+<div class="tree">
+<div class="tree-level"><div class="tree-node tree-node-csuite tooltip-custom" onclick="showDetail('CEO')"><div class="role-en">Chief Executive Officer</div><div class="role-es">Director Ejecutivo</div><span class="tooltip-text">Highest authority in the company</span></div></div>
+<div class="tree-line-v"></div>
+<div class="tree-level">
+<div class="tree-node tree-node-csuite tooltip-custom" onclick="showDetail('CTO')"><div class="role-en">Chief Technology Officer</div><div class="role-es">Director de Tecnologia</div><span class="tooltip-text">Oversees all technology decisions</span></div>
+<div class="tree-node tree-node-csuite tooltip-custom" onclick="showDetail('CFO')"><div class="role-en">Chief Financial Officer</div><div class="role-es">Director Financiero</div><span class="tooltip-text">Manages company finances</span></div>
+<div class="tree-node tree-node-csuite tooltip-custom" onclick="showDetail('CMO')"><div class="role-en">Chief Marketing Officer</div><div class="role-es">Director de Marketing</div><span class="tooltip-text">Leads marketing strategy</span></div>
+<div class="tree-node tree-node-csuite tooltip-custom" onclick="showDetail('CISO')"><div class="role-en">Chief Info Security Officer</div><div class="role-es">Director de Seguridad TI</div><span class="tooltip-text">Protects company data and systems</span></div>
+</div>
+<div class="tree-line-v"></div>
+<div class="tree-level">
+<div class="tree-node tree-node-vp tooltip-custom" onclick="showDetail('VPE')"><div class="role-en">VP of Engineering</div><div class="role-es">VP de Ingenieria</div><span class="tooltip-text">Manages engineering departments</span></div>
+<div class="tree-node tree-node-vp tooltip-custom" onclick="showDetail('VPP')"><div class="role-en">VP of Product</div><div class="role-es">VP de Producto</div><span class="tooltip-text">Oversees product strategy</span></div>
+</div>
+<div class="tree-line-v"></div>
+<div class="tree-level">
+<div class="tree-node tree-node-director tooltip-custom" onclick="showDetail('DE')"><div class="role-en">Director of Engineering</div><div class="role-es">Director de Ingenieria</div><span class="tooltip-text">Leads multiple engineering teams</span></div>
+<div class="tree-node tree-node-director tooltip-custom" onclick="showDetail('DO')"><div class="role-en">Director of Operations</div><div class="role-es">Director de Operaciones</div><span class="tooltip-text">Manages daily operations</span></div>
+<div class="tree-node tree-node-director tooltip-custom" onclick="showDetail('DD')"><div class="role-en">Director of Product Design</div><div class="role-es">Director de Diseno</div><span class="tooltip-text">Oversees UX/UI design teams</span></div>
+</div>
+<div class="tree-line-v"></div>
+<div class="tree-level">
+<div class="tree-node tree-node-manager tooltip-custom" onclick="showDetail('EM')"><div class="role-en">Engineering Manager</div><div class="role-es">Gerente de Ingenieria</div><span class="tooltip-text">Manages a team of engineers</span></div>
+<div class="tree-node tree-node-manager tooltip-custom" onclick="showDetail('PM')"><div class="role-en">Product Manager</div><div class="role-es">Gerente de Producto</div><span class="tooltip-text">Defines product features</span></div>
+<div class="tree-node tree-node-manager tooltip-custom" onclick="showDetail('PRM')"><div class="role-en">Project Manager</div><div class="role-es">Gerente de Proyecto</div><span class="tooltip-text">Coordinates project delivery</span></div>
+<div class="tree-node tree-node-manager tooltip-custom" onclick="showDetail('QM')"><div class="role-en">QA Manager</div><div class="role-es">Gerente de Calidad</div><span class="tooltip-text">Ensures software quality</span></div>
+</div>
+<div class="tree-line-v"></div>
+<div class="tree-level">
+<div class="tree-node tree-node-lead tooltip-custom" onclick="showDetail('TL')"><div class="role-en">Technical Lead</div><div class="role-es">Lider Tecnico</div><span class="tooltip-text">Leads technical decisions</span></div>
+<div class="tree-node tree-node-lead tooltip-custom" onclick="showDetail('SA')"><div class="role-en">Software Architect</div><div class="role-es">Arquitecto de Software</div><span class="tooltip-text">Designs system architecture</span></div>
+<div class="tree-node tree-node-lead tooltip-custom" onclick="showDetail('SE')"><div class="role-en">Senior Engineer</div><div class="role-es">Ingeniero Senior</div><span class="tooltip-text">Experienced developer</span></div>
+<div class="tree-node tree-node-lead tooltip-custom" onclick="showDetail('DOE')"><div class="role-en">DevOps Engineer</div><div class="role-es">Ingeniero DevOps</div><span class="tooltip-text">Manages CI/CD pipelines</span></div>
+</div>
+<div class="tree-line-v"></div>
+<div class="tree-level">
+<div class="tree-node tree-node-staff tooltip-custom" onclick="showDetail('SD')"><div class="role-en">Software Developer</div><div class="role-es">Desarrollador</div><span class="tooltip-text">Writes and maintains code</span></div>
+<div class="tree-node tree-node-staff tooltip-custom" onclick="showDetail('QA')"><div class="role-en">QA Engineer</div><div class="role-es">Ingeniero QA</div><span class="tooltip-text">Tests software for bugs</span></div>
+<div class="tree-node tree-node-staff tooltip-custom" onclick="showDetail('UX')"><div class="role-en">UX/UI Designer</div><div class="role-es">Disenador UX/UI</div><span class="tooltip-text">Designs user interfaces</span></div>
+<div class="tree-node tree-node-staff tooltip-custom" onclick="showDetail('DS')"><div class="role-en">Data Scientist</div><div class="role-es">Cientifico de Datos</div><span class="tooltip-text">Analyzes data for insights</span></div>
+<div class="tree-node tree-node-staff tooltip-custom" onclick="showDetail('CSA')"><div class="role-en">Security Analyst</div><div class="role-es">Analista de Seguridad</div><span class="tooltip-text">Monitors security threats</span></div>
+<div class="tree-node tree-node-staff tooltip-custom" onclick="showDetail('DBA')"><div class="role-en">Database Admin</div><div class="role-es">Administrador BD</div><span class="tooltip-text">Manages databases</span></div>
+</div>
+<div class="tree-line-v"></div>
+<div class="tree-level">
+<div class="tree-node tree-node-entry tooltip-custom" onclick="showDetail('JD')"><div class="role-en">Junior Developer</div><div class="role-es">Desarrollador Junior</div><span class="tooltip-text">Entry-level programmer</span></div>
+<div class="tree-node tree-node-entry tooltip-custom" onclick="showDetail('IN')"><div class="role-en">Intern / Trainee</div><div class="role-es">Pasante / Aprendiz</div><span class="tooltip-text">Learning on the job</span></div>
+<div class="tree-node tree-node-entry tooltip-custom" onclick="showDetail('ITS')"><div class="role-en">IT Support</div><div class="role-es">Soporte TI</div><span class="tooltip-text">Helps users with tech issues</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<footer class="footer-custom">
+<div class="container">
+<h5><i class="fas fa-graduation-cap me-2"></i>English Worksheet</h5>
+<p class="mb-3">Designed for learning office communication and software company vocabulary.</p>
+<p style="font-size:0.9rem;opacity:0.7"><i class="fas fa-code me-1"></i>Built with Bootstrap 5, JavaScript & warm colors <i class="fas fa-heart ms-1" style="color:var(--wr)"></i></p>
+<hr style="border-color:rgba(255,255,255,0.1);margin:2rem 0">
+<p style="font-size:0.85rem;opacity:0.6">2026 - English Learning Materials</p>
+</div>
+</footer>
+
+<button class="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fas fa-arrow-up"></i></button>
+
+<div id="roleModal" class="modal fade" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content" style="border-radius:20px;border:none">
+<div class="modal-header" style="background:linear-gradient(135deg,var(--wp),var(--ws));border-radius:20px 20px 0 0;border:none">
+<h5 class="modal-title text-white" id="roleModalTitle">Role Details</h5>
+<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body p-4" style="background:var(--wl)">
+<div id="roleModalContent"></div>
+</div>
+</div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+const roleData={
+'CEO':{t:'Chief Executive Officer',es:'Director Ejecutivo',d:'The highest-ranking executive in the company. Makes major corporate decisions, manages overall operations, and is the main point of communication between the board and corporate operations.',s:'Leadership, Strategic Thinking, Decision Making, Communication'},
+'CTO':{t:'Chief Technology Officer',es:'Director de Tecnologia',d:'Responsible for the technological needs and R&D of the company. Makes decisions about technology architecture, stack selection, and technical strategy.',s:'Technical Architecture, Innovation, Team Building, Strategic Planning'},
+'CFO':{t:'Chief Financial Officer',es:'Director Financiero',d:'Manages the financial actions of the company. Tracks cash flow, analyzes financial strengths and weaknesses, and proposes corrective actions.',s:'Financial Analysis, Risk Management, Accounting, Forecasting'},
+'CMO':{t:'Chief Marketing Officer',es:'Director de Marketing',d:'Oversees the planning, development, and execution of marketing and advertising initiatives. Ensures the company message is distributed across channels.',s:'Brand Management, Digital Marketing, Analytics, Creativity'},
+'CISO':{t:'Chief Information Security Officer',es:'Director de Seguridad de la Informacion',d:'Responsible for establishing and maintaining the enterprise vision, strategy, and program to ensure information assets and technologies are adequately protected.',s:'Cybersecurity, Risk Assessment, Compliance, Incident Response'},
+'VPE':{t:'VP of Engineering',es:'Vicepresidente de Ingenieria',d:'Leads the engineering department, manages multiple engineering teams, and ensures technical excellence across all products. Reports to the CTO.',s:'Team Management, Technical Leadership, Scalability, Mentoring'},
+'VPP':{t:'VP of Product Management',es:'Vicepresidente de Gestion de Producto',d:'Oversees the product management team, defines product strategy, and ensures products meet market needs and business goals.',s:'Product Strategy, Market Research, User Experience, Roadmapping'},
+'DE':{t:'Director of Engineering',es:'Director de Ingenieria',d:'Manages multiple engineering managers and their teams. Responsible for delivery timelines, technical standards, and cross-team coordination.',s:'Project Management, Technical Oversight, Resource Allocation'},
+'DO':{t:'Director of Operations',es:'Director de Operaciones',d:'Ensures business operations are efficient and effective. Manages day-to-day operations and implements operational policies.',s:'Process Optimization, Operations Management, Logistics'},
+'DD':{t:'Director of Product Design',es:'Director de Diseno de Producto',d:'Leads the design team, establishes design systems, and ensures consistent user experience across all products.',s:'Design Systems, UX Research, Visual Design, Team Leadership'},
+'EM':{t:'Engineering Manager',es:'Gerente de Ingenieria',d:'Manages a team of software engineers. Responsible for hiring, performance reviews, career development, and project delivery.',s:'People Management, Agile, Communication, Technical Knowledge'},
+'PM':{t:'Product Manager',es:'Gerente de Producto',d:'Defines what products to build and why. Bridges the gap between business, technology, and user needs.',s:'Product Strategy, User Research, Prioritization, Analytics'},
+'PRM':{t:'Project Manager',es:'Gerente de Proyecto',d:'Coordinates project delivery, manages timelines, budgets, and resources to ensure successful project completion.',s:'Project Planning, Risk Management, Communication, Organization'},
+'QM':{t:'QA Manager',es:'Gerente de Calidad',d:'Ensures software quality standards are met. Manages testing teams and implements quality assurance processes.',s:'Testing Strategy, Process Improvement, Attention to Detail'},
+'TL':{t:'Technical Lead',es:'Lider Tecnico',d:'Leads technical decisions for a team. Mentors developers and ensures code quality and architectural standards.',s:'Code Review, Architecture, Mentoring, Problem Solving'},
+'SA':{t:'Software Architect',es:'Arquitecto de Software',d:'Designs the overall structure of software systems. Makes high-level design choices and dictates technical standards.',s:'System Design, Patterns, Scalability, Integration'},
+'SE':{t:'Senior Software Engineer',es:'Ingeniero de Software Senior',d:'Experienced developer who can work independently on complex features. Mentors junior developers and contributes to architecture.',s:'Advanced Coding, Debugging, Mentoring, System Design'},
+'DOE':{t:'DevOps Engineer',es:'Ingeniero DevOps',d:'Manages CI/CD pipelines, infrastructure, and deployment processes. Bridges development and operations teams.',s:'Cloud Platforms, Automation, CI/CD, Infrastructure'},
+'SD':{t:'Software Developer',es:'Desarrollador de Software',d:'Writes, tests, and maintains code for software applications. Collaborates with designers, product managers, and other developers.',s:'Programming, Problem Solving, Collaboration, Debugging'},
+'QA':{t:'QA Engineer',es:'Ingeniero de Calidad',d:'Tests software to find bugs and ensure quality. Writes test cases and automates testing processes.',s:'Testing, Attention to Detail, Automation, Analysis'},
+'UX':{t:'UX/UI Designer',es:'Disenador UX/UI',d:'Designs user interfaces and experiences. Creates wireframes, prototypes, and visual designs for software products.',s:'User Research, Prototyping, Visual Design, Empathy'},
+'DS':{t:'Data Scientist',es:'Cientifico de Datos',d:'Analyzes complex data to extract insights. Uses statistics, machine learning, and visualization to support business decisions.',s:'Statistics, Python/R, Machine Learning, Visualization'},
+'CSA':{t:'Cybersecurity Analyst',es:'Analista de Ciberseguridad',d:'Monitors security threats, investigates breaches, and implements security measures to protect company data.',s:'Network Security, Threat Analysis, Incident Response'},
+'DBA':{t:'Database Administrator',es:'Administrador de Base de Datos',d:'Manages databases, ensures data integrity, optimizes performance, and handles backups and recovery.',s:'SQL, Performance Tuning, Backup/Recovery, Security'},
+'JD':{t:'Junior Developer',es:'Desarrollador Junior',d:'Entry-level programmer who works on simpler tasks under supervision. Learning and growing their technical skills.',s:'Basic Programming, Eagerness to Learn, Teamwork'},
+'IN':{t:'Intern / Trainee',es:'Pasante / Aprendiz',d:'Learning on the job through hands-on experience. Works on small tasks and learns from senior team members.',s:'Curiosity, Adaptability, Basic Technical Skills'},
+'ITS':{t:'IT Support Specialist',es:'Especialista de Soporte TI',d:'Helps users with technical issues. Troubleshoots hardware, software, and network problems.',s:'Troubleshooting, Customer Service, Patience, Communication'}
+};
+
+function showDetail(key){
+const r=roleData[key];
+if(!r)return;
+document.getElementById('roleModalTitle').textContent=r.t;
+document.getElementById('roleModalContent').innerHTML='<h6 style="color:var(--wt);font-weight:700">'+r.es+'</h6><p style="color:#5D4037;margin-top:1rem">'+r.d+'</p><div style="margin-top:1rem;padding:1rem;background:#fff;border-radius:12px;border-left:4px solid var(--wa)"><strong style="color:var(--wp)">Key Skills:</strong><p style="color:#8D6E63;margin-bottom:0;margin-top:0.5rem">'+r.s+'</p></div>';
+new bootstrap.Modal(document.getElementById('roleModal')).show();
+}
+
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){e.preventDefault();const t=document.querySelector(this.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth',block:'start'});});});
+
+const stb=document.querySelector('.scroll-top');
+window.addEventListener('scroll',()=>{if(window.scrollY>500){stb.style.opacity='1';stb.style.pointerEvents='auto';}else{stb.style.opacity='0';stb.style.pointerEvents='none';}});
+stb.style.opacity='0';stb.style.pointerEvents='none';stb.style.transition='opacity 0.3s';
+
+// Animate elements on scroll
+const observer=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)';}});},{threshold:0.1});
+document.querySelectorAll('.question-card, .vocab-card, .comic-panel').forEach(el=>{el.style.opacity='0';el.style.transform='translateY(30px)';el.style.transition='all 0.6s ease';observer.observe(el);});
+</script>
+</body>
+</html>
